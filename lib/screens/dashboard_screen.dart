@@ -1,6 +1,7 @@
 import 'package:admin_panel/core/widgets/add_user_form.dart';
 import 'package:admin_panel/core/widgets/settings_form.dart';
 import 'package:admin_panel/core/widgets/stat_card.dart';
+import 'package:admin_panel/core/widgets/weather_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
@@ -83,7 +84,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
               ],
             ),
             const SizedBox(height: 24),
-
+            YandexWeatherWidget(),
+            const SizedBox(height: 24),
             // Фильтры и период времени
             Row(
               children: [
