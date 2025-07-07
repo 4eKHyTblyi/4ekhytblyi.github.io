@@ -1,3 +1,4 @@
+import 'package:admin_panel/core/widgets/settings_form.dart';
 import 'package:admin_panel/screens/dashboard_screen.dart';
 import 'package:admin_panel/screens/login_screen.dart';
 import 'package:flutter/material.dart';
@@ -15,9 +16,7 @@ class AdminApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.grey[100],
       ),
       home: const LoginScreen(),
-      routes: {
-        '/dashboard': (context) => const DashboardScreen(),
-      },
+      routes: {'/dashboard': (context) => const DashboardScreen()},
     );
   }
 }
